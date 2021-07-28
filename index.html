@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cash register</title>
+</head>
+
+<body>
+    <h1>Cash Register Manager</h1>
+
+    <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+
+    <div id="divOne">
+        <h2>Bill amount</h2>
+        <input type="number" id="billAmountInput">
+        <br>
+        <button type="button" class="btn-primary" id="billAmountButton">Next</button>
+        <p id="errorOne">Enter a valid amount</p>
+    </div>
+
+    <div id="divTwo">
+        <h2>Cash given</h2>
+        <input type="number" id="cashGivenInput">
+        <br>
+        <button type="button" class="btn-primary" id="cashGivenButton">Check</button>
+        <p id="errorTwo">Cash is less than bill, please enter right amount</p>
+
+        <p id="noReturn">No amount should be returned.</p>
+    </div>
+
+    <div id="result">
+        <h2>Return change</h2>
+
+        <table>
+            <tbody>
+                <tr>
+                    <th>No.of Notes
+                    </th>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                </tr>
+                <tr>
+                    <th>Note
+                    </th>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>20</td>
+                    <td>100</td>
+                    <td>500</td>
+                    <td>2000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <ul class="footer-list">
+        <li class="list-item"><a target="_blank" href="mailto:chakravarthisaran7@gmail.com" class="footer-links">
+                <i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </li>
+        <li class="list-item"><a target="_blank" href="https://github.com/chakravarthi0">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="list-item"><a target="_blank" href="https://www.linkedin.com/in/saran-chakravarthi-b44438175">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+        <li class="list-item"><a target="_blank" href="https://twitter.com/saranchakravar3">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+        <li class="list-item"><a target="_blank" href="https://portfolio-saran.netlify.app/">
+                <i class="fas fa-briefcase"></i>
+            </a>
+        </li>
+
+    </ul>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
